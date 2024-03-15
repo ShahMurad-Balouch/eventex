@@ -1,0 +1,374 @@
+/* Nav Bar */
+.head-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+.nav { 
+  background-color: rgb(255, 255, 255);
+  flex: 20%;
+  max-width: 10%;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* .nav img {
+  width: 100px;
+  padding-left: 10px;
+} */
+.nav a {
+  font-size: 2em;  
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.nav a:hover {
+  color: rgb(100, 4, 112);
+  text-decoration:underline;
+}
+.dropbtn {
+  color: white;
+  font-size: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media (max-width: 800px) {
+    .nav {
+      flex: 50%;
+      max-width: 30%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .nav {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+ 
+
+ /*video and down related data.*/
+ .flex-container {
+    background-color: rgb(100, 4, 112);
+    max-width: 100%;
+
+}
+.flex-container video{
+    background-color: rgb(100, 4, 112);
+max-width: 100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-left {
+ background-color: rgb(100, 4, 112);
+  flex: 100%;
+  font-family:serif;
+  color: white;
+  display: flex;
+}
+.container-left h2 {
+    font-size :55px;
+}
+.container-right {
+    margin: 15px;
+  flex: 70%;
+  padding: 15px;
+}
+/* .container-right img{
+    max-width: 150%;
+} */
+img {
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+}
+
+
+/* core values */
+.core h2 {
+    font-size: 3em;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.values {
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.items{
+    flex: 40%;
+    max-width: 30%;
+    background-color: rgb(100, 4, 112);
+    border: 7px solid rgb(255, 255, 255);
+}
+.items h3{
+    padding-top: 50px;
+    color: white;
+    padding-left: 20px;
+    font-size: x-large;
+}
+.items p {
+    padding-left: 20px;
+    padding-right: 10px;
+    color: white;
+    font-size: x-large;
+}
+.items img{
+min-height: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .items {
+      flex: 50%;
+      max-width: 30%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .items {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Sectors */
+.sectors {
+    background-color:#cecece;
+}
+.sectors h2 {
+    font-size: 3em;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.bloc{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+.sects{
+    flex: 25%;
+    max-width: 30%;
+    padding-bottom: 20px;
+}
+.sects h5{
+    color: rgb(158, 13, 163);
+    padding-left: 20px;
+    font-size: large;
+    text-decoration:underline;
+}
+.sects p{
+    padding-left: 20px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .sects {
+      flex: 50%;
+      max-width: 30%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .sects {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Partern */
+  .partern {
+    background-color:#ffffff;
+    align-items: center;
+}
+.partern h2 {
+    font-size: 3em;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+.agents{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+.blocks{
+    flex: 20%;
+    max-width: 30%;
+    background-color: rgb(100, 4, 112);
+    border: 5px solid rgb(255, 255, 255);
+}
+.blocks h2{
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    font-size: x-large;
+    padding-top: 10px;
+}
+.blocks img {
+  min-height: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .blocks {
+      flex: 50%;
+      max-width: 30%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .blocks {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Our Events and prides */
+  .prides{
+    background-color: rgb(100, 4, 112);
+    align-items: center;
+    color: #ffffff;
+  }
+  .event-heading h2{
+    font-size: 3em;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+  .event-heading p {
+    padding-left: 30px;
+    margin-left: 50px;
+border-left: 9px solid rgb(255, 255, 255);
+font-size: 2em;
+  }
+  .eve{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+  .event-blocks {
+    flex: 40%;
+    max-width: 50%;
+    padding-bottom: 20px;
+  }
+  .event-blocks p {
+    padding-left: 20px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 800px) {
+    .event-blocks {
+      flex: 50%;
+      max-width: 30%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .event-blocks{
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Paints and coating */
+  .paints {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .gather h2{
+  padding: 10px;
+  font-size: 3em;
+  }
+  .coating {
+    flex: 45%;
+    max-width: 50%;
+  }
+  .coating p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 2em;
+  }
+  .coating img {
+    margin-top: 90px;
+  }
+@media (max-width : 800px){
+  .coating{
+    flex: 50%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width : 600px){
+  .coating{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  background-color: rgb(100, 4, 112);
+  color: white;
+}
+.foot {
+  padding: 20px;
+  flex: 30%;
+  max-width: 50%;
+  margin-top: 10px;
+}
+
+.foot img {
+  max-width: 40%;
+}
+@media (max-width : 800px){
+.foot{
+  flex: 50%;
+  max-width: 30%;
+}
+}
+
+@media (max-width : 600px){
+.foot{
+  flex: 100%;
+  max-width: 100%;
+}
+}
