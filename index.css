@@ -1,49 +1,67 @@
-/* Nav Bar */
-.head-container{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4px;
-}
-.nav { 
-  background-color: rgb(255, 255, 255);
-  flex: 20%;
-  max-width: 10%;
-  margin: 20px;
-  padding: 10px;
+/* Nav Bar
+
+  /* Reset default margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
 }
 
-/* .nav img {
-  width: 100px;
-  padding-left: 10px;
-} */
-.nav a {
-  font-size: 2em;  
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
 }
-.nav a:hover {
-  color: rgb(100, 4, 112);
-  text-decoration:underline;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+width: 10%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #000000;
+  font-size: 2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 .dropbtn {
-  color: white;
-  font-size: 2px;
-  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 2em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  text-decoration: none;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  text-decoration: none;
 }
 
 .dropdown-content a {
@@ -57,21 +75,12 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+  text-decoration: none;
 }
-@media (max-width: 800px) {
-    .nav {
-      flex: 50%;
-      max-width: 30%;
-    }
-  }
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .nav {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
- 
+.nav-links li a:hover {
+  color: rgb(100, 4, 112);
+}
+
 
  /*video and down related data.*/
  .flex-container {
@@ -236,11 +245,12 @@ min-height: 100%;
 .blocks h2{
     color: rgb(255, 255, 255);
     padding-left: 20px;
-    font-size: x-large;
+    font-size: xx-large;
     padding-top: 10px;
 }
 .blocks img {
   min-height: 100%;
+  box-shadow: 0px 0px 0px .5px #333232;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -287,6 +297,7 @@ font-size: 2em;
   }
   .event-blocks p {
     padding-left: 20px;
+    font-size: 25px;
     color: #ffffff;
   }
 
@@ -345,9 +356,11 @@ font-size: 2em;
 .footer {
   display: flex;
   flex-wrap: wrap;
- 
   background-color: rgb(100, 4, 112);
   color: white;
+}
+.foot h2 {
+  padding-top: 15%;
 }
 .foot {
   padding: 20px;
@@ -355,9 +368,14 @@ font-size: 2em;
   max-width: 50%;
   margin-top: 10px;
 }
-
+.foot ul {
+  list-style-type: none;
+}
 .foot img {
   max-width: 40%;
+}
+.foot p {
+  font-size: 20px;
 }
 @media (max-width : 800px){
 .foot{
