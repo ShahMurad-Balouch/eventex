@@ -1,49 +1,9 @@
-/* Nav Bar
+/* 
+body{
+  font-family: montserrat;
+} */
 
-  /* Reset default margin and padding */
-body, ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar styles */
-.navbar {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 10px 0;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-width: 10%;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links li a {
-  color: #000000;
-  font-size: 2em;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 .dropbtn {
-  color: rgb(0, 0, 0);
-  font-size: 2em;
   cursor: pointer;
   text-decoration: none;
 }
@@ -65,8 +25,9 @@ width: 10%;
 }
 
 .dropdown-content a {
+  font-size: 1em;
   color: black;
-  padding: 10px;
+  padding: 4px;
   text-decoration: none;
   display: block;
 }
@@ -76,20 +37,117 @@ width: 10%;
 .dropdown:hover .dropdown-content {
   display: block;
   text-decoration: none;
+
 }
-.nav-links li a:hover {
-  color: rgb(100, 4, 112);
+
+
+
+nav{
+  background: #0082e6;
+  height: 140px;
+  width: 100%;
+  padding-top: 20px;
 }
+.logo{
+  width: 10%;
+  
+}
+nav ul{
+  float: right;
+  padding-right: 50px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+  .logo{
+  max-width: 100%;
+
+  }
+  nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  
+  @media (max-width : 800px) {
+    .checkbtn{
+      display: block;
+    }
+    
+    .logo{
+      max-width: 100%;
+  }
+  nav ul{
+    position: fixed;
+    width: 25%;
+    height: 35%;
+    background: #2c3e50;
+    top: 80px;
+    right: -50%;
+    text-align: center;
+    transition: all .5s;
+    cursor: pointer;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px ;
+    line-height: 15px;
+    cursor: pointer;
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+    cursor: pointer;
+  }
+  #check:checked ~ ul{
+    right: 0;
+  } 
+  
+  
+  
+}
+  
+
+
 
 
  /*video and down related data.*/
  .flex-container {
-    background-color: rgb(100, 4, 112);
+    background-color: rgb(10, 51, 85);
     max-width: 100%;
 
 }
 .flex-container video{
-    background-color: rgb(100, 4, 112);
+    background-color: rgb(10, 51, 85);
 max-width: 100%;
 
 }
@@ -100,7 +158,7 @@ max-width: 100%;
 }
 
 .container-left {
- background-color: rgb(100, 4, 112);
+ background-color: rgb(10, 51, 85);
   flex: 100%;
   font-family:serif;
   color: white;
@@ -119,12 +177,22 @@ max-width: 100%;
 } */
 img {
     width: 100%;
+
 }
 @media (max-width: 800px) {
     .container {
       flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 /* core values */
@@ -141,7 +209,7 @@ img {
 .items{
     flex: 40%;
     max-width: 30%;
-    background-color: rgb(100, 4, 112);
+    background-color: rgb(10, 51, 85);
     border: 7px solid rgb(255, 255, 255);
 }
 .items h3{
@@ -186,7 +254,7 @@ min-height: 100%;
 .bloc{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 4px;
 }
 .sects{
     flex: 25%;
@@ -205,6 +273,9 @@ min-height: 100%;
     color: rgb(0, 0, 0);
     font-size: large;
 }
+.sects img{
+  min-height: 100%;
+  }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
@@ -239,7 +310,7 @@ min-height: 100%;
 .blocks{
     flex: 20%;
     max-width: 30%;
-    background-color: rgb(100, 4, 112);
+    background-color: rgb(10, 51, 85);
     border: 5px solid rgb(255, 255, 255);
 }
 .blocks h2{
@@ -270,7 +341,7 @@ min-height: 100%;
 
   /* Our Events and prides */
   .prides{
-    background-color: rgb(100, 4, 112);
+    background-color:rgb(10, 51, 85);
     align-items: center;
     color: #ffffff;
   }
@@ -337,6 +408,9 @@ font-size: 2em;
   .coating img {
     margin-top: 90px;
   }
+  /* .coating img{
+    min-height: 100%;
+    } */
 @media (max-width : 800px){
   .coating{
     flex: 50%;
@@ -356,7 +430,7 @@ font-size: 2em;
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(100, 4, 112);
+  background-color: rgb(10, 51, 85);
   color: white;
 }
 .foot h2 {
@@ -370,6 +444,8 @@ font-size: 2em;
 }
 .foot ul {
   list-style-type: none;
+  padding: 0;
+  font-size: 20px;
 }
 .foot img {
   max-width: 40%;
@@ -382,7 +458,8 @@ font-size: 2em;
   flex: 50%;
   max-width: 30%;
 }
-}
+};
+
 
 @media (max-width : 600px){
 .foot{
