@@ -198,13 +198,14 @@ img {
 /* core values */
 .core h2 {
     font-size: 3em;
-    padding-left: 30px;
-    padding-top: 50px;
+    padding-left: 50px;
+    padding-top: 40px;
 }
 .values {
     display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+   justify-content: center;
+  
 }
 .items{
     flex: 40%;
@@ -254,9 +255,9 @@ min-height: 100%;
 .bloc{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
-}
-.sects{
+    padding: 0 30px;
+  }
+  .sects{
     flex: 25%;
     max-width: 30%;
     padding-bottom: 20px;
@@ -265,13 +266,18 @@ min-height: 100%;
     color: rgb(158, 13, 163);
     padding-left: 20px;
     font-size: large;
-    text-decoration:underline;
+    text-decoration:none;
+    text-transform: uppercase;
 }
+
+
 .sects p{
     padding-left: 20px;
     padding-right: 10px;
     color: rgb(0, 0, 0);
-    font-size: large;
+    font-size: 1.5em;
+    font-family:"Montserrat", Sans-serif;
+    font-weight: 400;
 }
 .sects img{
   min-height: 100%;
@@ -305,7 +311,7 @@ min-height: 100%;
 .agents{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 .blocks{
     flex: 20%;
@@ -359,7 +365,7 @@ font-size: 2em;
   .eve{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 35px;
   }
   .event-blocks {
     flex: 40%;
@@ -368,7 +374,9 @@ font-size: 2em;
   }
   .event-blocks p {
     padding-left: 20px;
-    font-size: 25px;
+    font-size: 20px;
+    font-family:"Montserrat", Sans-serif;
+    font-weight: 200;
     color: #ffffff;
   }
 
@@ -390,11 +398,12 @@ font-size: 2em;
   .paints {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 30px;
   }
   .gather h2{
-  padding: 10px;
+  padding: 0 30px;
   font-size: 3em;
+  font-family:"Montserrat", Sans-serif;
   }
   .coating {
     flex: 45%;
@@ -403,10 +412,12 @@ font-size: 2em;
   .coating p {
     padding: 10px;
     text-align: justify;
-    font-size: 2em;
+   font-size: 25px;
+    font-family:"Montserrat", Sans-serif;
+    
   }
   .coating img {
-    margin-top: 90px;
+    margin-top: 50px;
   }
   /* .coating img{
     min-height: 100%;
